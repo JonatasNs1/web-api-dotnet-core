@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using PrimeiraApi.Aplication.ViewModel;
+using PrimeiraApi.Domain.DTOs;
 using PrimeiraApi.Domain.Model;
 
 namespace PrimeiraApi.Controllers
@@ -12,11 +14,13 @@ namespace PrimeiraApi.Controllers
 
         private readonly IEmployeeRepoditory _employeeRepository;
         private readonly ILogger<EmployeeController> _logger;
+        private readonly IActionResultTypeMapper _mapper;
 
-        public EmployeeController(IEmployeeRepoditory employeeRepository, ILogger<EmployeeController> logger)
+        public EmployeeController(IEmployeeRepoditory employeeRepository, ILogger<EmployeeController> logger, IActionResultTypeMapper mapper)
         {
             _employeeRepository = employeeRepository ?? throw new ArgumentNullException(nameof(employeeRepository));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
         [Authorize]
@@ -54,6 +58,15 @@ namespace PrimeiraApi.Controllers
             var employess = _employeeRepository.Get( pageNumber, pageQuantit);
             _logger.LogInformation("Teste");
 
+            return Ok(employess);
+        }
+
+        [HttpGet]
+        public IActionResult Search(int id)
+        {
+            var employess = _employeeRepository.Get(id);
+            var employessDTOS = _mapper.Map<EmployeeDTO>(employess);
+        
             return Ok(employess);
         }
     }
