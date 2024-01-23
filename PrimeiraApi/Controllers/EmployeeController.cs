@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using PrimeiraApi.Model;
-using PrimeiraApi.ViewModel;
+using PrimeiraApi.Aplication.ViewModel;
+using PrimeiraApi.Domain.Model;
 
 namespace PrimeiraApi.Controllers
 {

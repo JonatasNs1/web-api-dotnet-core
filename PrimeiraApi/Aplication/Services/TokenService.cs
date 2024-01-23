@@ -1,8 +1,8 @@
-﻿using PrimeiraApi.Model;
+﻿using PrimeiraApi.Domain.Model;
 using System.Security.Claims;
 using System.Text;
 
-namespace PrimeiraApi.Services
+namespace PrimeiraApi.Aplication.Services
 {
     public class TokenService
     {
@@ -11,7 +11,7 @@ namespace PrimeiraApi.Services
             var Key = Encoding.ASCII.GetBytes(Key.Secret);
             var tokenConfig = new SecurityTokenDescriptor
             {
-                Subject = new System.Security.Claims.ClaimsIdentity(new Claim[]
+                Subject = new ClaimsIdentity(new Claim[]
                 {
                     new Claim("employeeId", employee.id.ToString()),
                 }),
@@ -25,5 +25,5 @@ namespace PrimeiraApi.Services
         return new{
             token = tokenString;
         }
-    }
+}
 }

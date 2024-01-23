@@ -1,6 +1,6 @@
 using Microsoft.OpenApi.Models;
-using PrimeiraApi.Infraestrutura;
-using PrimeiraApi.Model;
+using PrimeiraApi.Domain.Model;
+using PrimeiraApi.Infraestrutura.Repositories;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);

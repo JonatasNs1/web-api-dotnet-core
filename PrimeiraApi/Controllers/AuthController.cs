@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PrimeiraApi.Services;
+using PrimeiraApi.Aplication.Services;
 
 namespace PrimeiraApi.Controllers
 {
