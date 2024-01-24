@@ -1,6 +1,6 @@
-﻿using PrimeiraApi.Domain.Model.EmployeeAggregate;
+﻿using WebApi.Domain.Model.EmployeeAggregate;
 
-namespace PrimeiraApi.Aplication.Mapping
+namespace WebApi.Aplication.Mapping
 {
     public class DomainToDTOMapping : Profile
     {

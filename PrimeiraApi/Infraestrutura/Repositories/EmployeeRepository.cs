@@ -1,7 +1,7 @@
-﻿using PrimeiraApi.Domain.DTOs;
-using PrimeiraApi.Domain.Model.EmployeeAggregate;
+﻿using WebApi.Domain.DTOs;
+using WebApi.Domain.Model.EmployeeAggregate;
 
-namespace PrimeiraApi.Infraestrutura.Repositories
+namespace WebApi.Infraestrutura.Repositories
 {
     public class EmployeeRepository : IEmployeeRepoditory
     {

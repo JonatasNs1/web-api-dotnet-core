@@ -1,4 +1,4 @@
-﻿namespace PrimeiraApi.Domain.DTOs
+﻿namespace WebApi.Domain.DTOs
 {
     public class EmployeeDTO
     {

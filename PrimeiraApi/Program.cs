@@ -5,15 +5,15 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using PrimeiraApi.Aplication.Mapping;
-using PrimeiraApi.Infraestrutura.Repositories;
+using WebApi.Aplication.Mapping;
+using WebApi.Infraestrutura.Repositories;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Text;
-using PrimeiraApi;
-using PrimeiraApi.Application.Mapping;
-using PrimeiraApi.Application.Swagger;
-using PrimeiraApi.Domain.Model.EmployeeAggregate;
-using PrimeiraApi.Infraestrutura.Repositories;
+using WebApi;
+using WebApi.Application.Mapping;
+using WebApi.Application.Swagger;
+using WebApi.Domain.Model.EmployeeAggregate;
+using WebApi.Infraestrutura.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

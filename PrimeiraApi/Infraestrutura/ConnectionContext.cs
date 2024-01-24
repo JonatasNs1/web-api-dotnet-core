@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PrimeiraApi.Domain.Model.EmployeeAggregate;
+using WebApi.Domain.Model.EmployeeAggregate;
 
-namespace PrimeiraApi.Infraestrutura
+namespace WebApi.Infraestrutura
 {
     public class ConnectionContext : DbContext
     {

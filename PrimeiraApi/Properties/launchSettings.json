@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "PrimeiraApi": {
+    "WebApi": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

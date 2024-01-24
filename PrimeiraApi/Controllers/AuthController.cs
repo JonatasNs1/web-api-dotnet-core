@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PrimeiraApi.Aplication.Services;
+using WebApi.Aplication.Services;
 
-namespace PrimeiraApi.Controllers
+namespace WebApi.Controllers
 {
     [ApiController]
     [Route("/api/v1/auth")]

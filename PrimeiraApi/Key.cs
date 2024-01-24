@@ -1,4 +1,4 @@
-﻿namespace PrimeiraApi
+﻿namespace WebApi
 {
     public class Key
     {

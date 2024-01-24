@@ -1,8 +1,8 @@
-﻿using PrimeiraApi.Domain.Model.EmployeeAggregate;
+﻿using WebApi.Domain.Model.EmployeeAggregate;
 using System.Security.Claims;
 using System.Text;
 
-namespace PrimeiraApi.Aplication.Services
+namespace WebApi.Aplication.Services
 {
     public class TokenService
     {

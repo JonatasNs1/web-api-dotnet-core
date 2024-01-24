@@ -1,4 +1,4 @@
-﻿namespace PrimeiraApi.Domain.Model.CompanyAggregate
+﻿namespace WebApi.Domain.Model.CompanyAggregate
 {
     [Table("company")]
     public class Company
