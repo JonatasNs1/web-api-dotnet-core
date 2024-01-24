@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PrimeiraApi.Domain.Model;
+using PrimeiraApi.Domain.Model.EmployeeAggregate;
 
 namespace PrimeiraApi.Infraestrutura
 {

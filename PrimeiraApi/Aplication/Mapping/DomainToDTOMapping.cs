@@ -1,4 +1,4 @@
-﻿using PrimeiraApi.Domain.Model;
+﻿using PrimeiraApi.Domain.Model.EmployeeAggregate;
 
 namespace PrimeiraApi.Aplication.Mapping
 {
